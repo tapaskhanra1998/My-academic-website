@@ -22,22 +22,6 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    textarea, input {
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 4px;
-      background: #2c3e50;
-      color: white;
-      cursor: pointer;
-    }
     .relations {
       max-height: 300px;
       overflow-y: auto;
@@ -47,11 +31,24 @@
       font-family: monospace;
       white-space: pre-wrap;
     }
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+    }
     footer {
       font-size: 0.9rem;
       margin-top: 2rem;
       text-align: center;
       color: #777;
+    }
+    a {
+      color: #2c3e50;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -60,15 +57,21 @@
 
   <div class="section">
     <h2>Leave Your Feedback / Comments</h2>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="feedback">Comments or Suggestions:</label>
-      <textarea id="feedback" name="feedback" rows="5" required></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
+    <p>
+      Kindly share your thoughts, suggestions, or academic comments using the form below.
+    </p>
+    <p>
+      📄 You can also read the abstract of the presentation here:  
+      <a href="https://www.linguindic.com/static/documents/conference_2025_programme/abstracts/mapping_the_genitive_case.f5882327274d.pdf" target="_blank">
+        Mapping the Genitive Case – Abstract PDF
+      </a>
+    </p>
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSejbzkb7x2SQIggZBPBJyG6gICnHxRr5MRBCpp_Vx1HRPZhqw/viewform?embedded=true" 
+      height="750" 
+      loading="lazy">
+      Loading…
+    </iframe>
   </div>
 
   <div class="section">
